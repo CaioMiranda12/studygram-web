@@ -29,7 +29,7 @@ function Home() {
         <h1>Administrativo II</h1>
         <DivButtons>
           <button onClick={() => navigate('/professora')}>Professora</button>
-          <button>Monitora</button>
+          <button onClick={() => navigate('/monitora')}>Monitora</button>
         </DivButtons>
       </DivStart>
 
