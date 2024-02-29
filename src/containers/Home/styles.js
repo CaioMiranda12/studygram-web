@@ -17,6 +17,10 @@ export const DivStart = styled.div`
 
   color: #fff;
   font-size: 45px;
+
+  @media (max-width: 768px) {
+    font-size: 23px;
+  }
 `
 
 export const DivButtons = styled.div`
@@ -41,10 +45,16 @@ export const DivButtons = styled.div`
       #c65785 75%,
       #b7457e 100%
     );
+
+    @media (max-width: 768px) {
+      height: 50px;
+      width: 120px;
+    }
   }
 
   button:hover {
     opacity: 0.8;
+    transform: scale(0.95);
   }
 
   button:active {
@@ -101,6 +111,7 @@ export const ItemCarrousel = styled.div`
 
   button:hover {
     opacity: 0.8;
+    transform: scale(0.95);
   }
 
   button:active {

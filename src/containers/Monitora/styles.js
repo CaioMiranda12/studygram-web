@@ -26,8 +26,14 @@ export const DivStart = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  color: #fff;
-  font-size: 30px;
+  h1 {
+    font-size: 50px;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
 
   button {
     font-weight: bold;
@@ -61,6 +67,10 @@ export const DivMain = styled.div`
     #bb7f8b 100%
   );
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   h1 {
     font-size: 50px;
   }
@@ -68,11 +78,18 @@ export const DivMain = styled.div`
   img {
     width: 400px;
     border-radius: 50px;
+    @media (max-width: 768px) {
+      width: 70%;
+    }
   }
 
   p {
     width: 700px;
     font-style: italic;
+
+    @media (max-width: 768px) {
+      width: 75%;
+    }
   }
 
   button {
@@ -90,6 +107,10 @@ export const DivMain = styled.div`
     border-radius: 21px;
     padding: 10px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   button:hover {
@@ -98,5 +119,13 @@ export const DivMain = styled.div`
 
   button:active {
     opacity: 0.6;
+  }
+
+  div {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `
