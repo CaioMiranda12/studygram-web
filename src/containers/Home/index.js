@@ -43,7 +43,7 @@ function Home() {
             <button onClick={() => navigate('/1')}>Licitações</button>
           </ItemCarrousel>
 
-          <ItemCarrousel>
+          <ItemCarrousel isActive>
             <div>
               <h2>CAP. 2</h2>
               <img src={ImgCarrousel} />
@@ -51,7 +51,7 @@ function Home() {
             <button>Contratos</button>
           </ItemCarrousel>
 
-          <ItemCarrousel>
+          <ItemCarrousel isActive>
             <div>
               <h2>CAP. 3</h2>
               <img src={ImgCarrousel} />
@@ -59,7 +59,7 @@ function Home() {
             <button>Sanções</button>
           </ItemCarrousel>
 
-          <ItemCarrousel>
+          <ItemCarrousel isActive>
             <div>
               <h2>CAP. 4</h2>
               <img src={ImgCarrousel} />
@@ -67,7 +67,7 @@ function Home() {
             <button>Servidor Público</button>
           </ItemCarrousel>
 
-          <ItemCarrousel>
+          <ItemCarrousel isActive>
             <div>
               <h2>CAP. 5</h2>
               <img src={ImgCarrousel} />
@@ -75,7 +75,7 @@ function Home() {
             <button>Agentes Públicos</button>
           </ItemCarrousel>
 
-          <ItemCarrousel>
+          <ItemCarrousel isActive>
             <div>
               <h2>CAP. 6</h2>
               <img src={ImgCarrousel} />

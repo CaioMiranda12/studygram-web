@@ -1,3 +1,4 @@
+import { BrightnessLowRounded } from '@mui/icons-material'
 import styled from 'styled-components'
 
 import DireitoBg from '../../assets/direitoBg.jpg'
@@ -96,25 +97,35 @@ export const ItemCarrousel = styled.div`
   img {
     width: 200px;
     border-radius: 20px;
+    filter: brightness(${props => (props.isActive ? 0.5 : 1)});
   }
 
   button {
-    background: #ff8fd9;
+    background-image: linear-gradient(
+      180deg,
+      #f693a4 0,
+      #e9829a 25%,
+      #d86c8f 50%,
+      #c65785 75%,
+      #b7457e 100%
+    );
     height: 40px;
     border: none;
     border-radius: 20px;
-
+    opacity: ${props => (props.isActive ? 0.5 : 1)};
     font-size: 20px;
     font-weight: bold;
-    cursor: pointer;
+
+    text-decoration: ${props => (props.isActive ? 'line-through' : 'none')};
   }
 
   button:hover {
-    opacity: 0.8;
-    transform: scale(0.95);
+    opacity: ${props => (props.isActive ? 'none' : 0.8)};
+    transform: ${props => (props.isActive ? 'none' : 'scale(0.95)')};
+    cursor: ${props => (props.isActive ? 'not-allowed' : 'pointer')};
   }
 
   button:active {
-    opacity: 0.6;
+    opacity: ${props => (props.isActive ? 'none' : 0.6)};
   }
 `

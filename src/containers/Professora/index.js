@@ -2,7 +2,7 @@ import React from 'react'
 import Carousel from 'react-elastic-carousel'
 import { useNavigate } from 'react-router-dom'
 
-import ProfImg from '../../assets/s200_leanne.holanda_de_paula_pessoa.jpg'
+import ProfImg from '../../assets/prof.avif'
 import {
   Container,
   DivStart,
